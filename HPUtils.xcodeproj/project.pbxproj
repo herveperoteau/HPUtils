@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		09D479AC1858379500A62689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479AB1858379500A62689 /* Foundation.framework */; };
-		09D479B11858379600A62689 /* HPUtils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09D479B01858379600A62689 /* HPUtils.h */; };
-		09D479B31858379600A62689 /* HPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D479B21858379600A62689 /* HPUtils.m */; };
 		09D479BA1858379700A62689 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479B91858379700A62689 /* XCTest.framework */; };
 		09D479BB1858379700A62689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479AB1858379500A62689 /* Foundation.framework */; };
 		09D479BD1858379700A62689 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479BC1858379700A62689 /* UIKit.framework */; };
 		09D479C01858379700A62689 /* libHPUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479A81858379500A62689 /* libHPUtils.a */; };
 		09D479C61858379700A62689 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09D479C41858379700A62689 /* InfoPlist.strings */; };
 		09D479C81858379700A62689 /* HPUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D479C71858379700A62689 /* HPUtilsTests.m */; };
+		09D479D9185838A600A62689 /* MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D479D8185838A600A62689 /* MD5Digest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				09D479B11858379600A62689 /* HPUtils.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +43,14 @@
 		09D479A81858379500A62689 /* libHPUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHPUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D479AB1858379500A62689 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09D479AF1858379600A62689 /* HPUtils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPUtils-Prefix.pch"; sourceTree = "<group>"; };
-		09D479B01858379600A62689 /* HPUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPUtils.h; sourceTree = "<group>"; };
-		09D479B21858379600A62689 /* HPUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPUtils.m; sourceTree = "<group>"; };
 		09D479B81858379700A62689 /* HPUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D479B91858379700A62689 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		09D479BC1858379700A62689 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		09D479C31858379700A62689 /* HPUtilsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HPUtilsTests-Info.plist"; sourceTree = "<group>"; };
 		09D479C51858379700A62689 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09D479C71858379700A62689 /* HPUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPUtilsTests.m; sourceTree = "<group>"; };
+		09D479D7185838A600A62689 /* MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Digest.h; sourceTree = "<group>"; };
+		09D479D8185838A600A62689 /* MD5Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5Digest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +108,9 @@
 		09D479AD1858379500A62689 /* HPUtils */ = {
 			isa = PBXGroup;
 			children = (
-				09D479B01858379600A62689 /* HPUtils.h */,
-				09D479B21858379600A62689 /* HPUtils.m */,
 				09D479AE1858379600A62689 /* Supporting Files */,
+				09D479D7185838A600A62689 /* MD5Digest.h */,
+				09D479D8185838A600A62689 /* MD5Digest.m */,
 			);
 			path = HPUtils;
 			sourceTree = "<group>";
@@ -224,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D479B31858379600A62689 /* HPUtils.m in Sources */,
+				09D479D9185838A600A62689 /* MD5Digest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  HPUtils.h
+//  MD5Digest.h
 //  HPUtils
 //
 //  Created by Hervé PEROTEAU on 11/12/2013.
@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HPUtils : NSObject
+@interface NSString (MD5Digest)
+- (NSString*) md5Digest;
+@end
 
+@interface NSData (MD5Digest)
+- (NSString*) md5Digest;
 @end
