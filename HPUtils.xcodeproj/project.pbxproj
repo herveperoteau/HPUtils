@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096AFC6A185DEB8B00AA9538 /* UIImage+HPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 096AFC69185DEB8B00AA9538 /* UIImage+HPUtils.m */; };
 		09D479AC1858379500A62689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479AB1858379500A62689 /* Foundation.framework */; };
 		09D479BA1858379700A62689 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479B91858379700A62689 /* XCTest.framework */; };
 		09D479BB1858379700A62689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479AB1858379500A62689 /* Foundation.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		096AFC68185DEB8B00AA9538 /* UIImage+HPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HPUtils.h"; sourceTree = "<group>"; };
+		096AFC69185DEB8B00AA9538 /* UIImage+HPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HPUtils.m"; sourceTree = "<group>"; };
 		09D479A81858379500A62689 /* libHPUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHPUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D479AB1858379500A62689 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09D479AF1858379600A62689 /* HPUtils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPUtils-Prefix.pch"; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				09D479AE1858379600A62689 /* Supporting Files */,
 				09D479D7185838A600A62689 /* MD5Digest.h */,
 				09D479D8185838A600A62689 /* MD5Digest.m */,
+				096AFC68185DEB8B00AA9538 /* UIImage+HPUtils.h */,
+				096AFC69185DEB8B00AA9538 /* UIImage+HPUtils.m */,
 			);
 			path = HPUtils;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D479D9185838A600A62689 /* MD5Digest.m in Sources */,
+				096AFC6A185DEB8B00AA9538 /* UIImage+HPUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +413,7 @@
 				09D479CD1858379700A62689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D479CE1858379700A62689 /* Build configuration list for PBXNativeTarget "HPUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +422,7 @@
 				09D479D01858379700A62689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
