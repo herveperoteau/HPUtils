@@ -10,7 +10,8 @@
 		0932D6BB186C37CA00E4E13E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932D6BA186C37CA00E4E13E /* UIImage+ImageEffects.m */; };
 		0932D6BD186C381D00E4E13E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0932D6BC186C381D00E4E13E /* UIKit.framework */; };
 		096AFC6A185DEB8B00AA9538 /* UIImage+HPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 096AFC69185DEB8B00AA9538 /* UIImage+HPUtils.m */; };
-		09BFB50718AB573C00812C38 /* NSString+HPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFB50618AB573C00812C38 /* NSString+HPUtils.m */; };
+		09BFB51318AC046C00812C38 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFB51018AC046C00812C38 /* GTMNSString+HTML.m */; };
+		09BFB51418AC046C00812C38 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFB51218AC046C00812C38 /* NSString+HTML.m */; };
 		09D479AC1858379500A62689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479AB1858379500A62689 /* Foundation.framework */; };
 		09D479BA1858379700A62689 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479B91858379700A62689 /* XCTest.framework */; };
 		09D479BB1858379700A62689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D479AB1858379500A62689 /* Foundation.framework */; };
@@ -49,9 +50,11 @@
 		0932D6BC186C381D00E4E13E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		096AFC68185DEB8B00AA9538 /* UIImage+HPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HPUtils.h"; sourceTree = "<group>"; };
 		096AFC69185DEB8B00AA9538 /* UIImage+HPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HPUtils.m"; sourceTree = "<group>"; };
-		09BFB50518AB573C00812C38 /* NSString+HPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HPUtils.h"; sourceTree = "<group>"; };
-		09BFB50618AB573C00812C38 /* NSString+HPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HPUtils.m"; sourceTree = "<group>"; };
 		09BFB50818AB579600812C38 /* HPUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HPUtils.podspec; sourceTree = "<group>"; };
+		09BFB50F18AC045A00812C38 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		09BFB51018AC046C00812C38 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		09BFB51118AC046C00812C38 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		09BFB51218AC046C00812C38 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 		09D479A81858379500A62689 /* libHPUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHPUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D479AB1858379500A62689 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09D479AF1858379600A62689 /* HPUtils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPUtils-Prefix.pch"; sourceTree = "<group>"; };
@@ -123,15 +126,17 @@
 		09D479AD1858379500A62689 /* HPUtils */ = {
 			isa = PBXGroup;
 			children = (
+				09BFB50F18AC045A00812C38 /* GTMNSString+HTML.h */,
+				09BFB51018AC046C00812C38 /* GTMNSString+HTML.m */,
 				09D479D7185838A600A62689 /* MD5Digest.h */,
 				09D479D8185838A600A62689 /* MD5Digest.m */,
+				09BFB51118AC046C00812C38 /* NSString+HTML.h */,
+				09BFB51218AC046C00812C38 /* NSString+HTML.m */,
 				09D479AE1858379600A62689 /* Supporting Files */,
 				096AFC68185DEB8B00AA9538 /* UIImage+HPUtils.h */,
 				096AFC69185DEB8B00AA9538 /* UIImage+HPUtils.m */,
 				0932D6B9186C37CA00E4E13E /* UIImage+ImageEffects.h */,
 				0932D6BA186C37CA00E4E13E /* UIImage+ImageEffects.m */,
-				09BFB50518AB573C00812C38 /* NSString+HPUtils.h */,
-				09BFB50618AB573C00812C38 /* NSString+HPUtils.m */,
 			);
 			path = HPUtils;
 			sourceTree = "<group>";
@@ -244,8 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D479D9185838A600A62689 /* MD5Digest.m in Sources */,
-				09BFB50718AB573C00812C38 /* NSString+HPUtils.m in Sources */,
+				09BFB51318AC046C00812C38 /* GTMNSString+HTML.m in Sources */,
 				096AFC6A185DEB8B00AA9538 /* UIImage+HPUtils.m in Sources */,
+				09BFB51418AC046C00812C38 /* NSString+HTML.m in Sources */,
 				0932D6BB186C37CA00E4E13E /* UIImage+ImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
