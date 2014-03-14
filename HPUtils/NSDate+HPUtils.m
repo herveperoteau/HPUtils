@@ -23,9 +23,15 @@
 
 -(BOOL) sameDayWithDate:(NSDate *)date {
     
-    NSDate *d1 = [self normalizedDate];
-    NSDate *d2 = [date normalizedDate];
-    return [d1 isEqualToDate:d2];
+    NSCalendar *calendar = [NSCalendar new];
+
+    NSDateComponents* c1 = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
+                                       fromDate:self];
+    
+    NSDateComponents* c2 = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
+                                       fromDate:date];
+    
+    return (c1.year == c2.year && c1.month == c2.month && c1.day == c2.day);
 }
 
 @end
