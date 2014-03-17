@@ -21,7 +21,7 @@
 }
 
 
--(BOOL) sameDayWithDate:(NSDate *)date {
+-(BOOL) sameDayWithDate:(NSDate *) date {
     
     NSCalendar *calendar = [NSCalendar new];
 
@@ -32,6 +32,15 @@
                                        fromDate:date];
     
     return (c1.year == c2.year && c1.month == c2.month && c1.day == c2.day);
+}
+
+-(BOOL) passedOverXMinuts:(NSInteger) minuts {
+
+    NSTimeInterval interval = -1 * [self timeIntervalSinceNow];
+    
+    NSLog(@"Date:%@ timeIntervalSinceNow:%f", self, interval);
+    
+    return ( interval >= minuts * 60 );
 }
 
 @end

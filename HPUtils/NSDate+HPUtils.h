@@ -12,5 +12,6 @@
 
 -(NSDate *) normalizedDate;
 -(BOOL) sameDayWithDate:(NSDate *)date;
+-(BOOL) passedOverXMinuts:(NSInteger)minuts;
 
 @end
