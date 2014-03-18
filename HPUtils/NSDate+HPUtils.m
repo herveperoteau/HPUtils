@@ -10,17 +10,6 @@
 
 @implementation NSDate (HPUtils)
 
--(NSDate *) normalizedDate
-{
-    NSCalendar *calendar = [NSCalendar new];
-    
-    NSDateComponents* components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
-                                               fromDate:self];
-    
-    return [calendar dateFromComponents:components];
-}
-
-
 -(BOOL) sameDayWithDate:(NSDate *) date {
     
     NSCalendar *calendar = [NSCalendar new];
@@ -42,5 +31,44 @@
     
     return ( interval >= minuts * 60 );
 }
+
+-(NSDate *) dateAtZeroHour {
+    
+    unsigned int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    NSDateComponents* components = [calendar components:flags fromDate:self];
+    
+    NSDate *date =  [[calendar dateFromComponents:components] dateByAddingTimeInterval:[[NSTimeZone localTimeZone] secondsFromGMT]];
+    
+    return date;
+}
+
+-(NSDate *) dateAtZeroHourTomorrow {
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    [components setDay:1];
+    
+    NSDate *tomorrow = [calendar dateByAddingComponents:components
+                                                 toDate:self
+                                                options:0];
+    
+    return [tomorrow dateAtZeroHour];
+}
+
+- (NSInteger)daysUntilNow
+{
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    NSDateComponents *difference = [calendar components:NSDayCalendarUnit
+                                               fromDate:self
+                                                 toDate:[NSDate date]
+                                                options:0];
+    
+    NSInteger days = [difference day];
+    
+    return days;
+}
+
 
 @end

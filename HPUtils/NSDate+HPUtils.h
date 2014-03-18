@@ -10,8 +10,12 @@
 
 @interface NSDate (HPUtils)
 
--(NSDate *) normalizedDate;
 -(BOOL) sameDayWithDate:(NSDate *)date;
 -(BOOL) passedOverXMinuts:(NSInteger)minuts;
+
+-(NSDate *) dateAtZeroHour;
+-(NSDate *) dateAtZeroHourTomorrow;
+-(NSInteger) daysUntilNow;
+
 
 @end
