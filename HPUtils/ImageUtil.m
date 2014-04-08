@@ -32,16 +32,22 @@ static NSTimeInterval timeCreateBitmapContext;
 }
 
 + (UIImage *) squareThumbnailImageWithImage:(UIImage *)imageMaster {
+    
+    return [ImageUtil squareThumbnailImageWithImage:imageMaster
+                                           WithSize:SQUARED_THUMBNAIL_SIZE];
+}
+
++ (UIImage *) squareThumbnailImageWithImage:(UIImage *)imageMaster WithSize:(CGFloat)size {
 	
 	UIImage *result = [ImageUtil squareImageWithImage:imageMaster];
 	
-	if (result.size.width > SQUARED_THUMBNAIL_SIZE) {
-	
-		CGSize sizeSquaredThumbnail = CGSizeMake(SQUARED_THUMBNAIL_SIZE, SQUARED_THUMBNAIL_SIZE);
+	if (result.size.width > size) {
+        
+		CGSize sizeSquaredThumbnail = CGSizeMake(size, size);
 		
 		result = [ImageUtil imageWithImage:result scaledToSize:sizeSquaredThumbnail];
 	}
-
+    
 	return result;
 }
 

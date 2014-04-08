@@ -22,6 +22,9 @@
 
 +(UIImage *) imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 +(UIImage *) squareThumbnailImageWithImage:(UIImage *)imageMaster;
++(UIImage *) squareThumbnailImageWithImage:(UIImage *)imageMaster
+                                  WithSize:(CGFloat)size;
+
 +(UIImage *) squareImageWithImage:(UIImage *)imageMaster; 
 	
 +(UIColor *) colorByName:(NSString *)nameColor;
