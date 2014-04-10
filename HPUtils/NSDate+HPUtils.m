@@ -56,6 +56,19 @@
     return [tomorrow dateAtZeroHour];
 }
 
+-(NSDate *) dateAtZeroHourMinusXDays:(NSInteger)days {
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    [components setDay:-1*days];
+    
+    NSDate *date = [calendar dateByAddingComponents:components
+                                                 toDate:self
+                                                options:0];
+    
+    return [date dateAtZeroHour];
+}
+
 - (NSInteger)daysUntilNow
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];

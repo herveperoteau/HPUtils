@@ -11,6 +11,13 @@
 		0932D6BB186C37CA00E4E13E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932D6BA186C37CA00E4E13E /* UIImage+ImageEffects.m */; };
 		0932D6BD186C381D00E4E13E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0932D6BC186C381D00E4E13E /* UIKit.framework */; };
 		096AFC6A185DEB8B00AA9538 /* UIImage+HPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 096AFC69185DEB8B00AA9538 /* UIImage+HPUtils.m */; };
+		098B684D18F6907800FF8CD3 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFB51018AC046C00812C38 /* GTMNSString+HTML.m */; };
+		098B684E18F6907B00FF8CD3 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA3E818B3FDF0008EE25F /* ImageUtil.m */; };
+		098B684F18F6907F00FF8CD3 /* MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D479D8185838A600A62689 /* MD5Digest.m */; };
+		098B685018F6908300FF8CD3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFB51218AC046C00812C38 /* NSString+HTML.m */; };
+		098B685118F6908600FF8CD3 /* UIImage+HPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 096AFC69185DEB8B00AA9538 /* UIImage+HPUtils.m */; };
+		098B685218F6908A00FF8CD3 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0932D6BA186C37CA00E4E13E /* UIImage+ImageEffects.m */; };
+		098B685318F6908D00FF8CD3 /* NSDate+HPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915D44018D35BA400330F5F /* NSDate+HPUtils.m */; };
 		09BFB51318AC046C00812C38 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFB51018AC046C00812C38 /* GTMNSString+HTML.m */; };
 		09BFB51418AC046C00812C38 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFB51218AC046C00812C38 /* NSString+HTML.m */; };
 		09CEA3E918B3FDF0008EE25F /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CEA3E818B3FDF0008EE25F /* ImageUtil.m */; };
@@ -272,7 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098B684F18F6907F00FF8CD3 /* MD5Digest.m in Sources */,
 				09D479C81858379700A62689 /* HPUtilsTests.m in Sources */,
+				098B685218F6908A00FF8CD3 /* UIImage+ImageEffects.m in Sources */,
+				098B685018F6908300FF8CD3 /* NSString+HTML.m in Sources */,
+				098B684E18F6907B00FF8CD3 /* ImageUtil.m in Sources */,
+				098B684D18F6907800FF8CD3 /* GTMNSString+HTML.m in Sources */,
+				098B685318F6908D00FF8CD3 /* NSDate+HPUtils.m in Sources */,
+				098B685118F6908600FF8CD3 /* UIImage+HPUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,5 +17,7 @@
 -(NSDate *) dateAtZeroHourTomorrow;
 -(NSInteger) daysUntilNow;
 
+-(NSDate *) dateAtZeroHourMinusXDays:(NSInteger)days;
+
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSDate+HPUtils.h"
+#import "MD5Digest.h"
 
 @interface HPUtilsTests : XCTestCase
 
@@ -26,9 +28,25 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testMD5Digest
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSString *str = @"test";
+    NSLog(@"%@ => %@", str, [str md5Digest]);
+}
+
+
+- (void)testdateAtZeroHour
+{
+    NSDate *date = [[NSDate date] dateAtZeroHour];
+    
+    NSLog(@"dateAtZeroHour=%@", date);
+}
+
+- (void)testdateAtZeroHourMinus7Days
+{
+    NSDate *date = [[NSDate date] dateAtZeroHourMinusXDays:7];
+    
+    NSLog(@"testdateAtZeroHourMinus7Days=%@", date);
 }
 
 @end
