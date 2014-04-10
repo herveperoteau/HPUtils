@@ -27,8 +27,6 @@
 
     NSTimeInterval interval = -1 * [self timeIntervalSinceNow];
     
-    NSLog(@"Date:%@ timeIntervalSinceNow:%f", self, interval);
-    
     return ( interval >= minuts * 60 );
 }
 
